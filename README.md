@@ -8,3 +8,8 @@ Basic npm module setup with typescript
 
 - `npm install --save-dev typescript`
 - create `tsconfig.json`
+
+### eslint
+
+- `npm install --save-dev eslint eslint-config-airbnb-base eslint-config-airbnb-typescript`
+- create `.eslintrc.js`
