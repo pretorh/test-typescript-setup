@@ -1,0 +1,8 @@
+{
+  "name": "test-typescript-setup",
+  "version": "0.0.0",
+  "description": "Basic npm module setup with typescript",
+  "type": "commonjs",
+  "author": "Hendri Pretorius",
+  "license": "MIT"
+}
