@@ -3,6 +3,12 @@
   "version": "0.0.0",
   "description": "Basic npm module setup with typescript",
   "type": "commonjs",
+  "scripts": {
+    "build": "tsc"
+  },
   "author": "Hendri Pretorius",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
 }
