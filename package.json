@@ -1,7 +1,7 @@
 {
   "name": "test-typescript-setup",
   "version": "0.0.0",
-  "description": "Basic npm module setup with typescript",
+  "description": "Basic npm module setup with typescript and eslint",
   "type": "commonjs",
   "scripts": {
     "build": "tsc",

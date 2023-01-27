@@ -1,6 +1,6 @@
 # test-typescript-setup
 
-Basic npm module setup with typescript
+Basic npm module setup with typescript and eslint
 
 ## setup
 
