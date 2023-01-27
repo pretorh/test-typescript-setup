@@ -20,6 +20,12 @@ module.exports = {
       files: '.eslintrc.js',
       parserOptions: { project: null },
     },
+    {
+      files: 'test/*.js',
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
