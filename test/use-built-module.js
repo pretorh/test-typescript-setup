@@ -1,3 +1,5 @@
-const sum = require('../dist').default;
+const example = require('../dist');
 
-console.log(sum(1, 2)); // eslint-disable-line no-console
+/* eslint-disable no-console */
+console.log(example.sum(1, 2));
+console.log(example.subtract(1, 2));
