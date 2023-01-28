@@ -6,9 +6,7 @@ module.exports = {
   },
   extends: [
     'airbnb-base',
-    'airbnb-typescript/base',
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
   ],
   ignorePatterns: [
     'dist/*',
@@ -16,9 +14,22 @@ module.exports = {
   ],
   overrides: [
     {
-      // ignore ESLint was configured to run ... TSConfig include this file
-      files: '.eslintrc.js',
-      parserOptions: { project: null },
+      files: '*.ts',
+      extends: [
+        'airbnb-base',
+        'airbnb-typescript/base',
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+      ],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        project: './tsconfig.json',
+      },
+      plugins: [
+        '@typescript-eslint',
+      ],
     },
     {
       files: 'test/*.js',
@@ -26,15 +37,6 @@ module.exports = {
         '@typescript-eslint/no-var-requires': 'off',
       },
     },
-  ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: './tsconfig.json',
-  },
-  plugins: [
-    '@typescript-eslint',
   ],
   rules: {
   },
