@@ -5,7 +5,8 @@
   "type": "commonjs",
   "scripts": {
     "build": "tsc",
-    "lint": "eslint '**/*.{t,j}s'"
+    "lint": "eslint '**/*.{t,j}s'",
+    "test": "node ./test/use-built-module.js"
   },
   "author": "Hendri Pretorius",
   "license": "MIT",
