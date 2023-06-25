@@ -15,7 +15,7 @@ Basic npm module setup with typescript and eslint
 - create `.eslintrc.js`
 
 use `overrides` to setup linting using typescript parsing for `ts` files only (avoid issue of "ESLint was
-configured to run ... TSConfig include this file") (from [this](https://stackoverflow.com/a/62953719/1016377)
+configured to run ... TSConfig include this file") (from [this](https://stackoverflow.com/a/62953719/1016377))
 
 ### js "interop"
 
