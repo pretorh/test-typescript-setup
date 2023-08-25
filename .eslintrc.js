@@ -10,6 +10,7 @@ module.exports = {
   ],
   ignorePatterns: [
     'dist/*',
+    'jstests/*',
     'node_modules/*',
   ],
   overrides: [

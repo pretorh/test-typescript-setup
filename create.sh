@@ -12,7 +12,5 @@ node test/use-built-module.js
 
 # tests written in typescript
 npm install --save-dev @types/node
-rm -r dist/
 npx tsc --project tsconfig.tstests.json
-npx eslint
-node ./dist/test/simple-test-written-in-ts.js
+node ./jstests/simple-test-written-in-ts.js

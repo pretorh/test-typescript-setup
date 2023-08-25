@@ -26,6 +26,6 @@ configured to run ... TSConfig include this file") (from [this](https://stackove
 ### tests written in typescript
 
 - `npm install --save-dev @types/node`
-- include the tests directory in tsconfig (`tsconfig.tstests.json`)
-- override eslint rules to use this tsconfig
-- run tests from the output directory (`...dist/test/...`)
+- create a separate tsconfig for tests (`tsconfig.tstests.json`)
+- override eslint rules to use this tsconfig for `test/*.ts` files
+- run tests from the output directory (`jstest/...`)
