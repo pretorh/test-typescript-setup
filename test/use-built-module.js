@@ -1,6 +1,6 @@
+const assert = require('node:assert');
 const example = require('../dist');
 
-/* eslint-disable no-console */
-console.log(example.sum(1, 2));
-console.log(example.subtract(1, 2));
-console.log(example.multiply(1, 2));
+assert(example.sum(1, 2) === 3);
+assert(example.subtract(1, 2) === -1);
+assert(example.multiply(3, 2) === 6);
