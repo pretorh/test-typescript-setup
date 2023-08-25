@@ -6,11 +6,14 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint .",
-    "test": "node ./test/use-built-module.js"
+    "test": "node ./test/use-built-module.js",
+    "build:tstests": "tsc --project tsconfig.tstests.json",
+    "test:tstests": "node ./dist/test/simple-test-written-in-ts.js"
   },
   "author": "Hendri Pretorius",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^20.5.6",
     "eslint": "^8.44.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",

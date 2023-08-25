@@ -32,6 +32,12 @@ module.exports = {
       ],
     },
     {
+      files: 'test/*.ts',
+      parserOptions: {
+        project: './tsconfig.tstests.json',
+      },
+    },
+    {
       files: 'test/*.js',
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
