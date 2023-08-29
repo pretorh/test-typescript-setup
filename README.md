@@ -23,9 +23,14 @@ configured to run ... TSConfig include this file") (from [this](https://stackove
 - set `compilerOptions.allowJs`
 - should probaby set `include` (in root) to only compile sources (and not test files)
 
-### tests written in typescript
+### tests written in typescript (separate configs)
 
 - `npm install --save-dev @types/node`
-- create a separate tsconfig for tests (`tsconfig.tstests.json`)
+- create a separate tsconfig for tests (`tsconfig.tstests.json`) with `outDir: ./jstests`, including only the tests
 - override eslint rules to use this tsconfig for `test/*.ts` files
 - run tests from the output directory (`jstest/...`)
+
+### tests written in typescript (single config)
+
+Change `tsconfig.json` to exclude any js test files. Change the output directory to something other than dist
+(it will contain the compiled tests as well)

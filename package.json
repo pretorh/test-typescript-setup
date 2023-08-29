@@ -6,9 +6,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint .",
-    "test": "node ./test/use-built-module.js",
-    "build:tstests": "tsc --project tsconfig.tstests.json",
-    "test:tstests": "node ./jstests/simple-test-written-in-ts.js"
+    "test": "node ./test/use-built-module.js ./out/test/simple-test-written-in-ts.js"
   },
   "author": "Hendri Pretorius",
   "license": "MIT",

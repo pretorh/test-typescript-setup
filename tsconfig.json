@@ -1,13 +1,14 @@
 {
-  "include": [
-    "src/"
+  "exclude": [
+    "test/*.js",
+    "out/"
   ],
   "compilerOptions": {
     "target": "es2016",
     "lib": [ "esnext" ],
     "module": "commonjs",
     "declaration": true,
-    "outDir": "./dist",
+    "outDir": "./out",
     "allowJs": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

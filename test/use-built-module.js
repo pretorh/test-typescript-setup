@@ -1,5 +1,5 @@
 const assert = require('node:assert');
-const example = require('../dist');
+const example = require('../out/src'); // load from ts compiled outputs (and run from here)
 
 assert(example.sum(1, 2) === 3);
 assert(example.subtract(1, 2) === -1);

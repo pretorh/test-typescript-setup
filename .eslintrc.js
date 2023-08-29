@@ -9,8 +9,7 @@ module.exports = {
     'eslint:recommended',
   ],
   ignorePatterns: [
-    'dist/*',
-    'jstests/*',
+    'out/*',
     'node_modules/*',
   ],
   overrides: [
@@ -31,12 +30,6 @@ module.exports = {
       plugins: [
         '@typescript-eslint',
       ],
-    },
-    {
-      files: 'test/*.ts',
-      parserOptions: {
-        project: './tsconfig.tstests.json',
-      },
     },
     {
       files: 'test/*.js',
